@@ -7,7 +7,7 @@
 			<meta name='description' content=''>
 			<meta name='keywords' content=''>
 			<meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1?>
-			<meta name='viewport' content='width=device-width, initial-scale=.5, maximum-scale=1'>
+			<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
 			
 		<!-- no cache -->
 			<meta http-equiv="Pragma" content="no-cache">
@@ -24,12 +24,18 @@
 				<script type='text/javascript'>
 				$(window).on('resize', function () {
 					var width = $(window).width();
-					if (width < 750) {
-						// $('.third').addClass('full');
+					if (width < 800) {
+						$('.one-third, .two-third, .callbox').addClass('full');
+						$('.logo').addClass('logo-shrink');
+						$('.about-pic').addClass('img-full');
 						// $('.bottom-nav').addClass('list-item');
 					}
 
-					if (width >= 750) {
+					if (width >= 800) {
+						$('.one-third, .two-third, .callbox').removeClass('full');
+						$('.logo').removeClass('logo-shrink');
+						$('.about-pic').removeClass('img-full');
+
 						// $('.third').removeClass('full');
 						// $('.bottom-nav').removeClass('list-item');
 					}
@@ -46,7 +52,7 @@
 		<div class='db'></div>
 		<div class='lb'></div>
 		<div class='wrapper gradient'>
-			<img src='imgs/logo.png'	alt='Alpine Aire Wenatchee Logo'	/>
+			<img class='logo' src='imgs/logo.png'	alt='Alpine Aire Wenatchee Logo'	/>
 			<div class='callbox'>
 				<div class='hours'>24/7 Emergency Service</div>
 				<div class='phone'>509.662.6846</div>
@@ -56,7 +62,7 @@
 	</div>
 
 	<div class='wrapper'>
-		<h2>Wenatchee's trusted source for HVAC service and repair.</h2>
+		<h2 class='fleft'>Wenatchee's trusted source for HVAC service and repair.</h2>
 		<div class='clear'></div>
 		<div id='nav'>
 			<a href=''>Home</a>
@@ -66,17 +72,79 @@
 			<a href=''>Contact</a>
 		</div>
 		<div class='clear'></div>
-		<div class='two-third cover-img'>
-			<img src='imgs/alpineaire3.jpg'/>
+		<div id='slideshow' class='two-third fleft'>
+			<img src='imgs/alpine.jpg'/>
 		</div>
-		<div class='one-third pm-promo'>
-			<h3>Spring is right around the corner!</h3>
-			<p>Don't wait for your AC to fail during the hot summer months... schedule a preventative maintenance today!</p>
+		<div class='one-third fright'>
+			<div class='pm-promo fright'>
+				<h3>Spring is right around the corner!</h3>
+				<p>Don't wait for your AC to fail during the hot summer months... schedule a preventative maintenance today!</p>
+				<p class='center'>
+					<a class='button-link' href=''>Learn more</a>
+				</p>
+				<p class='center'>Ask about our spring special!</p>
+			</div>
+			<div class='quote fright'>
+				<h3>Need a quote?</h3>
+				<p class='center'>Schedule a FREE estimate today!</p>
+				<img src='imgs/kitchen-sales-discussion.jpg'	/>
+				<p class='center'>
+					<a class='button-link' href=''>Request a quote</a>
+				</p>
+				<p class='center'>Ask about high efficiency heat pumps, and duct-free splits!</p>
+			</div>
+		</div>
+		<div class='two-third fleft locations'>
+			<h4>Proudly serving our family and friends in North Central Washington since 1986</h4>
+			<ul class='fleft'>
+				<li><a href=''>Wenatchee</a></li>
+				<li><a href=''>Cashmere</a></li>
+				<li><a href=''>Leavenworth</a></li>
+				<li><a href=''>Entiat</a></li>
+
+			</ul>
+			<ul class='fleft'>
+				<li><a href=''>Quincy</a></li>
+				<li><a href=''>Rock Island</a></li>
+				<li><a href=''>Waterville</a></li>
+				<li><a href=''>Cle Elum</a></li>
+			</ul>
+			<ul class='fleft'>
+				<li><a href=''>Plain</a></li>
+				<li><a href=''>Lake Wenatchee</a></li>
+			</ul>
+
+		</div>
+
+		<!-- <div class='clear'></div> -->
+		<div class='two-third fleft about'>
+			<div class='divider'>
+			</div>
+			<!-- <img src='imgs/alpine-aire-hvac-service-techs.jpg'/> -->
+			<h4>About Alpine Aire</h4>
+			<img class='fleft about-pic' src='imgs/tom-patty.jpg'	/>
+			<p>Tom has been an HVAC professional since 1991. He and his wife, Patty, purchased Alpine Aire, Inc. in March 2008 from Mike and Linda Dalponte.</p>
+			<p>Tom's background includes all phases of heating/cooling system design and installation. He has worked for a major utility, major regional contractor, and a regional distributor. He now really enjoys putting that experience to work as President of Alpine Aire.</p>
+			<p>He particularly enjoys working with customers to maximize the efficiency of their systems and minimize initial and long-term costs. Tom's expertise has saved customers thousands of dollars, and he looks forward to continuing that legacy.</p>
+			<p>Patty has been a business professional since 1980 and she brings extensive experience in customer service, training, and management to the Alpine Aire team. Patty especially enjoys meeting with customers and assuring the service they receive from Alpine Aire exceeds their expectations.</p>
 			<p class='center'>
-				<a class='button-link' href=''>Learn more</a>
+				<a class='button-link' href=''>Meet the whole team!</a>
 			</p>
-			<p class='center'>Ask about our spring special!</p>
+
 		</div>
+		<div class='one-third fright'>
+			<h3>Support local business!</h3>
+			<p><a href=''>Click here</a> to view and support other local businesses and friends of Alpine Aire</p>
+		</div>
+	</div>
+	<div class='clear'></div>
+	<div id='footer'>
+		<div class='db'></div>
+		<div class='lb'></div>
+		<div class='wrapper gradient'>
+
+		</div>
+
 	</div>
 
 </body>
